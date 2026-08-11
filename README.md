@@ -7,3 +7,5 @@
 Сайт подготовлен для GitHub Pages и состоит из статических файлов `index.html`, `styles.css` и `script.js`.
 
 Контакты: Швец Кирилл — [Telegram](https://t.me/clever_kir_13).
+
+Обновление сайта: 11.08.2026
