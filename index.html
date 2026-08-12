@@ -71,6 +71,35 @@
     <section class="privacy" id="privacy"><h2>Конфиденциальность</h2><p>Данные из формы используются только для обработки обращения и связи с вами. Заявка передаётся через защищённый сценарий автоматизации и сохраняется в рабочей таблице. Полная юридическая редакция будет добавлена перед коммерческим запуском.</p></section>
   </main>
   <footer><a class="brand" href="#top"><span class="mark">✦</span><b>ОРИОН<small>БОТЫ И АВТОМАТИЗАЦИИ</small></b></a><p>Telegram-боты и автоматизации под процессы вашего бизнеса.</p><span>© 2026 Орион · Швец Кирилл</span></footer>
+
+  <!-- Orion AI chat -->
+  <button class="ai-chat-launcher" id="ai-chat-launcher" type="button" aria-label="Открыть ИИ-чат" aria-controls="ai-chat-panel" aria-expanded="false">
+    <span aria-hidden="true">✦</span>
+    <span class="ai-chat-tooltip" role="tooltip">Задать вопрос ИИ</span>
+  </button>
+  <section class="ai-chat-panel" id="ai-chat-panel" aria-label="Чат с ИИ-консультантом Орион" aria-hidden="true">
+    <header class="ai-chat-header">
+      <div class="ai-chat-avatar" aria-hidden="true">О</div>
+      <div><strong>Орион</strong><span>ИИ-консультант · <i>● Онлайн</i></span></div>
+      <button class="ai-chat-close" id="ai-chat-close" type="button" aria-label="Закрыть чат">×</button>
+    </header>
+    <div class="ai-chat-messages" id="ai-chat-messages" role="log" aria-live="polite" aria-relevant="additions"></div>
+    <div class="ai-chat-typing" id="ai-chat-typing" hidden>
+      <span>Орион печатает</span><i></i><i></i><i></i>
+    </div>
+    <div class="ai-chat-quick" id="ai-chat-quick" aria-label="Быстрые вопросы">
+      <button type="button">🤖 Нужен чат-бот</button>
+      <button type="button">⚙️ Хочу автоматизировать бизнес</button>
+      <button type="button">💰 Узнать стоимость</button>
+      <button type="button">❓ Задать вопрос</button>
+    </div>
+    <form class="ai-chat-form" id="ai-chat-form">
+      <label class="sr-only" for="ai-chat-input">Сообщение</label>
+      <textarea id="ai-chat-input" maxlength="2000" rows="1" placeholder="Напишите сообщение…" aria-describedby="ai-chat-counter"></textarea>
+      <button id="ai-chat-send" type="submit" aria-label="Отправить сообщение">➤</button>
+      <small id="ai-chat-counter">0 / 2000</small>
+    </form>
+  </section>
   <script src="script.js"></script>
 </body>
 </html>
