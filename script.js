@@ -55,7 +55,7 @@ leadForm.addEventListener('submit', async (e) => {
  * ВСТАВЬТЕ PRODUCTION URL n8n ТОЛЬКО В СЛЕДУЮЩУЮ КОНСТАНТУ.
  * Не размещайте здесь ключи OpenAI, Google или другие секреты.
  */
-const N8N_CHAT_WEBHOOK_URL = '';
+const N8N_CHAT_WEBHOOK_URL = 'https://n8n.vbn8n.online/webhook/485dd647-b39d-475f-8e90-1b0101394d5d/chat';
 
 const chatLauncher = document.getElementById('ai-chat-launcher');
 const chatPanel = document.getElementById('ai-chat-panel');
