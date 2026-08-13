@@ -17,3 +17,8 @@
 .ai-chat-form{position:relative;display:grid;grid-template-columns:1fr 42px;gap:8px;padding:11px 12px 22px;border-top:1px solid var(--line);background:#fff}.ai-chat-form textarea{width:100%;max-height:100px;resize:none;border:1px solid #d2e0e9;border-radius:10px;padding:11px 12px;font:13px/1.35 Arial,sans-serif;color:var(--ink)}.ai-chat-form textarea:focus{outline:2px solid #b9dcfa;border-color:var(--blue)}.ai-chat-form button{border:0;border-radius:10px;background:var(--blue);color:#fff;font-size:17px;cursor:pointer}.ai-chat-form button:disabled,.ai-chat-form textarea:disabled{opacity:.55;cursor:not-allowed}.ai-chat-form small{position:absolute;right:63px;bottom:5px;color:#8b9ba7;font-size:8px}
 @keyframes orionPulse{0%,100%{opacity:.8;transform:scale(1)}50%{opacity:0;transform:scale(1.16)}}@keyframes orionDots{0%,60%,100%{transform:translateY(0);opacity:.45}30%{transform:translateY(-4px);opacity:1}}@keyframes orionMessage{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
 @media(max-width:650px){.ai-chat-launcher{right:16px;bottom:16px;width:56px;height:56px}.ai-chat-tooltip{display:none}.ai-chat-panel{right:8px;bottom:82px;width:calc(100vw - 16px);height:min(620px,calc(100dvh - 98px));border-radius:16px}.ai-chat-messages{padding:14px}.ai-message{max-width:90%}}
+
+/* Hero without static chat mockup */
+.hero>.demo{display:none}
+.hero{grid-template-columns:minmax(0,900px);justify-content:start}
+.hero-copy{max-width:900px}
