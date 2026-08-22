@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<canvas id="space-canvas" aria-hidden="true"></canvas>
 <header class="header">
   <a class="brand" href="#top"><span class="mark">◉</span><b>ОРИОН<small>ИИ-БОТЫ И АВТОМАТИЗАЦИЯ</small></b></a>
   <button class="menu" aria-label="Открыть меню">☰</button>
@@ -101,6 +102,7 @@
 
 <button class="ai-chat-launcher" id="ai-chat-launcher" type="button" aria-label="Открыть ИИ-чат" aria-controls="ai-chat-panel" aria-expanded="false"><span aria-hidden="true">✦</span><span class="ai-chat-tooltip" role="tooltip">Задать вопрос ИИ</span></button>
 <section class="ai-chat-panel" id="ai-chat-panel" aria-label="Чат с ИИ-консультантом Орион" aria-hidden="true"><header class="ai-chat-header"><div class="ai-chat-avatar" aria-hidden="true">О</div><div><strong>Орион</strong><span>ИИ-консультант · <i>● Онлайн</i></span></div><button class="ai-chat-close" id="ai-chat-close" type="button" aria-label="Закрыть чат">×</button></header><div class="ai-chat-messages" id="ai-chat-messages" role="log" aria-live="polite"></div><div class="ai-chat-typing" id="ai-chat-typing" hidden><span>Орион печатает</span><i></i><i></i><i></i></div><div class="ai-chat-quick" id="ai-chat-quick"><button type="button">🤖 Нужен чат-бот</button><button type="button">⚙️ Хочу автоматизировать бизнес</button><button type="button">💰 Узнать стоимость</button><button type="button">❓ Задать вопрос</button></div><form class="ai-chat-form" id="ai-chat-form"><label class="sr-only" for="ai-chat-input">Сообщение</label><textarea id="ai-chat-input" maxlength="2000" rows="1" placeholder="Напишите сообщение…" aria-describedby="ai-chat-counter"></textarea><button id="ai-chat-send" type="submit" aria-label="Отправить сообщение">➤</button><small id="ai-chat-counter">0 / 2000</small></form></section>
+<script src="space-bg.js"></script>
 <script src="script.js"></script>
 <script>document.querySelector('[data-open-chat]')?.addEventListener('click',()=>document.getElementById('ai-chat-launcher')?.click());</script>
 </body>
